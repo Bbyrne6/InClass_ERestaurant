@@ -25,8 +25,8 @@ namespace eRestaurant.Requirements.UserStories
                 FirstName = "Fred",
                 LastName = "Flinstone",
                 Address = "123 bedrock",
-                Phone = "7809876765";
-            }
+                Phone = "7809876765"
+            };
             int waiterId = -1;
             this.Given(_ => GivenWaiterInformation(newGuy))
                 .When(_ => WhenIAddTheWaiter(newGuy, out waiterId))
