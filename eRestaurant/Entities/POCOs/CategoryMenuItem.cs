@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace eRestaurant.Entities.POCOs
 {
-    class CategoryMenuItem
+    public class CategoryMenuItem
     {
         public string Comment { get; set; }
         public int? Calories { get; set; }
