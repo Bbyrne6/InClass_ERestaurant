@@ -18,7 +18,6 @@
                 <asp:TextBox Text='<%# Bind("Description") %>' runat="server" ID="DescriptionTextBox" />
                 <asp:CheckBox Checked='<%# Bind("Active") %>' runat="server" ID="ActiveCheckBox" Text="Active" />
 
-               
             </div>
         </EditItemTemplate>
         <EmptyDataTemplate>

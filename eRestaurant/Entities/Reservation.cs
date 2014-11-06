@@ -9,8 +9,9 @@ namespace eRestaurant.Entities
     public class Reservation
     {
         // Add in constants for valid reservation status values
-        // B = Booked; C = Complete; N = No-show; X = Cancelled
+        // B = Booked; A = Arrived; C = Complete; N = No-show; X = Cancelled
         public const string Booked = "B";
+        public const string Arrived = "A";
         public const string Complete = "C";
         public const string NoShow = "N";
         public const string Cancelled = "X";
@@ -26,6 +27,7 @@ namespace eRestaurant.Entities
         #region Navigation Properties
         public virtual ICollection<Table> Tables { get; set; }
         public virtual SpecialEvent SpecialEvent { get; set; }
+        public virtual ICollection<Bill> Bills { get; set; }
         #endregion
     }
 }

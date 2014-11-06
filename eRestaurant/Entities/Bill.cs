@@ -8,7 +8,7 @@ namespace eRestaurant.Entities
 {
     public class Bill
     {
-        public Bill() 
+        public Bill()
         {
             BillDate = DateTime.Now; // Default the date to right now
         }
@@ -29,5 +29,6 @@ namespace eRestaurant.Entities
         public virtual ICollection<BillItem> Items { get; set; }
         public virtual Waiter Waiter { get; set; }
         public virtual Table Table { get; set; }
+        public virtual Reservation Reservation { get; set; }
     }
 }
